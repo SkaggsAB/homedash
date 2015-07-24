@@ -1,0 +1,15 @@
+<template name="weather">
+  <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+    <div class="box1">
+    {{#if Template.subscriptionsReady}}
+      <span class="wi {{wu2wi wx.icon}}" title="{{wx.weather}}"></span>
+      <h3>{{wx.temp_f}}&deg; F</h3>
+
+    <p>{{wx.summary}}</p>
+    {{else}}
+      <span class="wi wi-meteor"></span>
+      <h3>2000&deg; F</h3>
+    {{/if}}
+    </div>
+  </div>
+</template>

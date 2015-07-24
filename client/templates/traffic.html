@@ -1,0 +1,15 @@
+<template name="traffic">
+  {{#each driver}}
+    {{> trafficbox}}
+  {{/each}}
+</template>
+
+<template name="trafficbox">
+  <div class="col-md-2 col-sm-2 box0">
+    <div class="box1">
+      <span class="fa fa-car" style="color: {{iconcolor}}" title="Last updated {{updated}}"></span>
+      <h3><a href="#" target="_blank">{{time}}</a></h3>
+    </div>
+    <p>{{desc}}</p>
+  </div>
+</template>

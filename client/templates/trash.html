@@ -1,0 +1,22 @@
+<template name="trash">
+  <div class="col-md-2 col-sm-2 box0">
+    <div class="box1">
+      {{#if heavytrashday.soon}}
+      <span class="fa fa-cubes" style="color: brown" title="Heavy Trash"></span>
+      <h3>{{heavytrashday.timeleft}}</h3>
+      {{/if}}
+      {{#if planttrashday.soon}}
+      <span class="fa fa-leaf" style="color: darkgreen" title="Plant Heavy Trash"></span>
+      <h3>{{planttrashday.timeleft}}</h3>
+      {{/if}}
+      {{#if trashday.soon}}
+      <span class="fa fa-trash" style="color: black" title="Trash"></span>
+        {{#if recycleday.soon}}
+        <span class="fa fa-recycle" style="color: darkgreen" title="Recycling"></span>
+        {{/if}}
+      <h3>&nbsp;</h3>
+      {{/if}}
+    </div>
+    <p>You have 23 unread messages in your inbox.</p>
+  </div>
+ </template>
